@@ -45,6 +45,7 @@ public class VaadinUI extends UI {
         });
 
         remove.addClickListener(click -> {
+
             for (Object row : grid.getSelectedRows()) {
                 grid.getContainerDataSource().removeItem(row);
             }
